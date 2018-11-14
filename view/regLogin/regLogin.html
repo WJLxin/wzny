@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" href="/logo/favicon.ico">
+		<style>
+			div#box label#ver{
+				display: none;
+			}
+			div#box button#send{
+				cursor: pointer;
+			}
+			div#box span#prompt{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<h1>登录页面</h1>
+			手机号:<input type="text" id="phone" value="15822255678"/>
+			<button type="button" id="send" disabled>发送验证码</button>
+			<label id="ver">
+				验证码:<input type="text" id="verCode" />
+				<button type="button" id="login">登录</button>
+			</label>
+			<span id="prompt"></span>
+		</div>
+		<script src="/js/jquery-1.11.3.min.js"></script>
+		<script src="/regLogin/regLogin.js"></script>
+	</body>
+</html>

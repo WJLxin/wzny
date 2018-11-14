@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" href="/logo/favicon.ico">
+		<style>div#box img#loading {
+	display: none;
+}
+
+div#box table#tab {
+	border: 1px solid red;
+	width: 800px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+div#box table#tab tr img {
+	width: 50px;
+	height: 50px;
+}
+
+div#box table#tab td,
+div#box table#tab th {
+	border: 1px solid red;
+}
+
+div#box table#tab td a {
+	cursor: pointer;
+}</style>
+	</head>
+	<body>
+		<div id="box">
+			<h1>欢迎<span id="user"></span>登录</h1>
+			手机号:<input type="text"  id="phone"/>
+			<div>
+				头像:<input type="file" id="file" />
+			</div>
+			<div id="sex">
+				性别:
+				<label>
+					男 <input type="radio" name="sex" checked value="0" />
+				</label>
+				<label>
+					女 <input type="radio" name="sex" value="1" />
+				</label>
+			</div>
+			<div id="hobby">
+				兴趣:
+				<label>
+					学习 <input type="checkbox" value="h1" />
+				</label>
+				<label>
+					唱歌 <input type="checkbox" value="h2" />
+				</label>
+				<label>
+					跳舞 <input type="checkbox" value="h3" />
+				</label>
+				<label>
+					数钱 <input type="checkbox" value="h4" />
+				</label>
+				<label>
+					工作 <input type="checkbox" value="h5" />
+				</label>
+			</div>
+			<div>
+				期望公司:<select id="se">
+					<option value="j1">百度</option>
+					<option value="j2">阿里</option>
+					<option value="j3">腾讯</option>
+					<option value="j4">华为</option>
+				</select>
+			</div>
+			<button type="button" id="save">保存</button>
+			<button type="button" style="display: none;" id="btn">修改完成</button>
+
+			<table id="tab">
+				<thead>
+					<tr>
+						<th>头像</th>
+						<th>手机号</th>
+						<th>性别</th>
+						<th>兴趣</th>
+						<th>期望公司</th>
+						<th>创建时间</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="tabb">
+				</tbody>
+			</table>
+			<img id="loading" src="/loading2.gif"  />
+			
+		</div>
+		<script src="/js/jquery-1.11.3.min.js"></script>
+		<script src="/user/user.js"></script>
+	</body>
+</html>
